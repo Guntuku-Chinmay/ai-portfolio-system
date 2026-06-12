@@ -9,30 +9,41 @@ export default function ProjectForm() {
   const [impact, setImpact] = useState("");
 
   const submitProject = async () => {
-    const response = await fetch(
-      "https://z08luhsnk8.execute-api.ap-south-1.amazonaws.com/prod/projects",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          title,
-          problem,
-          solution,
-          impact,
-        }),
+    try {
+      const response = await fetch(
+        "https://z08luhsnk8.execute-api.ap-south-1.amazonaws.com/prod/projects",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            title,
+            problem,
+            solution,
+            impact,
+          }),
+        }
+      );
+
+      const data = await response.json();
+
+      if (response.ok) {
+        alert("Project Added Successfully!");
+
+        setTitle("");
+        setProblem("");
+        setSolution("");
+        setImpact("");
+
+        window.location.reload();
+      } else {
+        alert(data.message || "Failed to add project");
       }
-    );
-
-    const data = await response.json();
-
-    alert(data.message);
-
-    setTitle("");
-    setProblem("");
-    setSolution("");
-    setImpact("");
+    } catch (error) {
+      console.error(error);
+      alert("Error adding project");
+    }
   };
 
   return (
@@ -53,6 +64,7 @@ export default function ProjectForm() {
           onChange={(e) => setProblem(e.target.value)}
           className="p-3 rounded-xl bg-black border border-white/10"
         />
+
         <textarea
           placeholder="Solution"
           value={solution}
@@ -67,7 +79,10 @@ export default function ProjectForm() {
           className="p-3 rounded-xl bg-black border border-white/10"
         />
 
-        <button onClick={submitProject} className="bg-blue-500 rounded-xl py-3">
+        <button
+          onClick={submitProject}
+          className="bg-blue-500 hover:bg-blue-600 rounded-xl py-3 text-white font-medium"
+        >
           Add Project
         </button>
       </div>

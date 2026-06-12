@@ -1,4 +1,5 @@
 import ProjectForm from "../components/admin/ProjectForm";
+import ProjectsList from "../components/admin/ProjectsList";
 
 export default function AdminPage() {
   return (
@@ -6,9 +7,7 @@ export default function AdminPage() {
       <h1 className="text-5xl font-bold mb-10">Portfolio Admin Dashboard</h1>
 
       <div className="grid gap-6">
-        <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
-          Existing Projects
-        </div>
+        <ProjectsList />
       </div>
 
       <ProjectForm />
