@@ -13,7 +13,7 @@ export default function AdminPage() {
   const [authorized, setAuthorized] = useState(false);
 
   useEffect(() => {
-    const auth = localStorage.getItem("admin-auth");
+    const auth = sessionStorage.getItem("admin-auth");
 
     if (auth === "true") {
       setAuthorized(true);
@@ -33,7 +33,8 @@ export default function AdminPage() {
 
         <button
           onClick={() => {
-            localStorage.removeItem("admin-auth");
+            sessionStorage.removeItem("admin-auth");
+
             router.push("/admin/login");
           }}
           className="bg-red-500 px-5 py-2 rounded-xl"

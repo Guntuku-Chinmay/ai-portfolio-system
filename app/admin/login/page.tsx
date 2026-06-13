@@ -10,8 +10,11 @@ export default function LoginPage() {
   const [password, setPassword] = useState("");
 
   const login = () => {
-    if (username === "admin" && password === "admin123") {
-      localStorage.setItem("admin-auth", "true");
+    if (
+      username === process.env.NEXT_PUBLIC_ADMIN_USERNAME &&
+      password === process.env.NEXT_PUBLIC_ADMIN_PASSWORD
+    ) {
+      sessionStorage.setItem("admin-auth", "true");
 
       router.push("/admin");
     } else {
