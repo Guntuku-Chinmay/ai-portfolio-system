@@ -127,5 +127,4 @@ export default function NeuralNetwork() {
       className="fixed inset-0 w-full h-full pointer-events-none z-10"
     />
   );
-  nodes;
 }
