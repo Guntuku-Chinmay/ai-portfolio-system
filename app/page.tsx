@@ -7,6 +7,7 @@ import SkillsArchitecture from "./components/skills/SkillsArchitecture";
 import CurrentlyExploring from "./components/exploring/CurrentlyExploring";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import ContactSection from "./components/contact/ContactSection";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <CurrentlyExploring />
       <Contact />
       <Footer />
+      <ContactSection />
     </>
   );
 }

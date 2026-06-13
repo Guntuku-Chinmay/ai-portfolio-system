@@ -25,13 +25,29 @@ export default function FeaturedProjects() {
         {projects.map((project) => (
           <div
             key={project.projectId}
-            className="bg-white/5 border border-white/10 rounded-3xl p-8"
+            className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-blue-500/40 hover:bg-white/10 transition-all duration-300"
           >
-            <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
+            <h3 className="text-2xl font-bold mb-6">{project.title}</h3>
 
-            <p className="text-gray-400 mb-4">{project.problem}</p>
+            <div className="space-y-4">
+              <div>
+                <p className="text-red-400 font-semibold">Problem</p>
 
-            <p className="text-green-400">{project.impact}</p>
+                <p className="text-gray-300">{project.problem}</p>
+              </div>
+
+              <div>
+                <p className="text-blue-400 font-semibold">Solution</p>
+
+                <p className="text-gray-300">{project.solution}</p>
+              </div>
+
+              <div>
+                <p className="text-green-400 font-semibold">Impact</p>
+
+                <p className="text-gray-300">{project.impact}</p>
+              </div>
+            </div>
           </div>
         ))}
       </div>
