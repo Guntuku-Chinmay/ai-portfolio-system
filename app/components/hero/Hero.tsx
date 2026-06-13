@@ -1,17 +1,20 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center px-6 pt-24 overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-20 w-72 h-72 bg-purple-600/20 rounded-full blur-3xl" />
 
         <div className="absolute bottom-20 right-20 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl" />
       </div>
+
       <div className="relative z-10 max-w-7xl w-full grid lg:grid-cols-2 gap-12">
+        {/* Left Side */}
         <div>
           <motion.p
             initial={{ opacity: 0 }}
@@ -56,24 +59,34 @@ export default function Hero() {
           />
 
           <div className="mt-8 flex gap-4">
-            <button className="px-6 py-3 rounded-xl border border-white/20 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 text-white">
+            <a
+              href="#projects"
+              className="px-6 py-3 rounded-xl border border-white/20 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 text-white"
+            >
               View Projects
-            </button>
+            </a>
 
             <a
-  href="/resume.pdf"
-  download
-  className="px-6 py-3 rounded-xl border border-white/20 hover:bg-white/10 transition"
->
+              href="/resume.pdf"
+              download
+              className="px-6 py-3 rounded-xl border border-white/20 hover:bg-white/10 transition-all duration-300 text-white"
+            >
               Download Resume
-            </button>
+            </a>
           </div>
         </div>
 
+        {/* Right Side */}
         <div className="relative flex justify-center items-center hidden lg:flex">
-          <div className="w-[350px] h-[350px] rounded-full bg-gradient-to-r from-purple-500 to-blue-500 blur-3xl opacity-30 absolute" />
+          <div className="absolute w-[420px] h-[420px] bg-blue-500/20 blur-3xl rounded-full" />
 
-          <div className="w-[300px] h-[300px] rounded-full border border-white/20 animate-pulse" />
+          <Image
+            src="/chinmay.png"
+            alt="Guntuku Chinmay"
+            width={350}
+            height={350}
+            className="relative rounded-full object-cover border border-white/20 shadow-2xl"
+          />
         </div>
       </div>
     </section>
