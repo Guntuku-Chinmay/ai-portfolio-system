@@ -67,7 +67,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="/resume.pdf"
+              href="/Chinmay_Guntuku_Resume.pdf"
               download
               className="px-6 py-3 rounded-xl border border-white/20 hover:bg-white/10 transition-all duration-300 text-white"
             >
@@ -81,7 +81,7 @@ export default function Hero() {
           <div className="absolute w-[420px] h-[420px] bg-blue-500/20 blur-3xl rounded-full" />
 
           <Image
-            src="/chinmay.png"
+            src="/chinmay.jpg"
             alt="Guntuku Chinmay"
             width={350}
             height={350}
