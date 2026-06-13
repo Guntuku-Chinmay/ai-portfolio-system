@@ -30,7 +30,7 @@ export default function NeuralNetwork() {
 
     window.addEventListener("mousemove", handleMouseMove);
 
-    const nodes = Array.from({ length: 35 }, () => ({
+    const nodes = Array.from({ length: 40 }, () => ({
       x: Math.random() * width,
       y: Math.random() * height,
       vx: (Math.random() - 0.5) * 0.4,
@@ -67,8 +67,8 @@ export default function NeuralNetwork() {
           const dy = nodes[i].y - nodes[j].y;
           const distance = Math.sqrt(dx * dx + dy * dy);
 
-          if (distance < 100) {
-            const opacity = 1 - distance / 100;
+          if (distance < 150) {
+            const opacity = 1 - distance / 150;
 
             ctx.beginPath();
             ctx.moveTo(nodes[i].x, nodes[i].y);
@@ -87,8 +87,8 @@ export default function NeuralNetwork() {
 
         const distance = Math.sqrt(dx * dx + dy * dy);
 
-        if (distance < 150) {
-          const opacity = 1 - distance / 150;
+        if (distance < 170) {
+          const opacity = 1 - distance / 170;
 
           ctx.beginPath();
           ctx.moveTo(node.x, node.y);
