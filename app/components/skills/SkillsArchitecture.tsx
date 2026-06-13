@@ -1,28 +1,33 @@
 export default function SkillsArchitecture() {
   const skillGroups = [
     {
-      title: "Product Thinking",
+      title: "Product Management",
       skills: [
-        "Product Strategy",
-        "Roadmapping",
-        "User Stories",
-        "Market Research",
+        "User Research",
+        "Feature Prioritization",
+        "MVP Thinking",
+        "User Flows",
         "Prioritization",
+        "Problem Solving",
       ],
     },
     {
-      title: "Generative AI",
-      skills: [
-        "Prompt Engineering",
-        "LLMs",
-        "RAG",
-        "AI Agents",
-        "Vector Databases",
-      ],
+      title: "Technical Foundations",
+      skills: ["Java", "Python", "HTML", "CSS", "Bootstrap", "GitHub", ,],
     },
     {
       title: "Cloud Engineering",
       skills: ["AWS Lambda", "API Gateway", "DynamoDB", "S3", "CloudFront"],
+    },
+    {
+      title: "Collaboration & Leadership",
+      skills: [
+        "Leadership",
+        "Stakeholder Coordination",
+        "Public Speaking",
+        "Cross-functional Collaboration",
+        "Community Building",
+      ],
     },
   ];
 

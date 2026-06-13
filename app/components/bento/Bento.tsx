@@ -12,46 +12,29 @@ export default function Bento() {
 
         <div className="grid md:grid-cols-4 gap-6">
           <div className="md:col-span-2 bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition">
-            <h3 className="text-2xl font-semibold mb-4">AI Interview Coach</h3>
+            <h3 className="text-2xl font-semibold mb-4">Product Thinking</h3>
 
             <p className="text-gray-400">
-              Helping students practice interviews using Generative AI and
-              feedback loops.
+              Focused on understanding user problems, prioritizing impactful
+              solutions, and translating ideas into actionable product roadmaps.
             </p>
           </div>
 
           <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition">
-            <h3 className="text-xl font-semibold mb-4">Product Management</h3>
+            <h3 className="text-xl font-semibold mb-4">Community Leadership</h3>
 
             <p className="text-gray-400">
-              User research, roadmaps, prioritization and metrics.
+              Led technical initiatives and engagement programs for 370+
+              students as GeeksForGeeks Campus Body Lead.
             </p>
           </div>
 
           <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition">
-            <h3 className="text-xl font-semibold mb-4">AWS</h3>
+            <h3 className="text-xl font-semibold mb-4">AI & Emerging Tech</h3>
 
             <p className="text-gray-400">
-              Lambda, DynamoDB, API Gateway and Serverless.
-            </p>
-          </div>
-
-          <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition">
-            <h3 className="text-xl font-semibold mb-4">Currently Reading</h3>
-
-            <p className="text-gray-400">
-              Inspired by Marty Cagan's product thinking concepts.
-            </p>
-          </div>
-
-          <div className="md:col-span-3 bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition">
-            <h3 className="text-2xl font-semibold mb-4">
-              Exploring Multi-Agent AI
-            </h3>
-
-            <p className="text-gray-400">
-              Building intelligent systems where multiple AI agents collaborate
-              to solve complex tasks.
+              Exploring Generative AI, RAG systems, AI agents, and intelligent
+              automation workflows.
             </p>
           </div>
         </div>
