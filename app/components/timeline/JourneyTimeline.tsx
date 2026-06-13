@@ -4,31 +4,43 @@ export default function JourneyTimeline() {
       year: "2023",
       title: "Started Engineering",
       description:
-        "Began my journey in Computer Science and explored software development fundamentals.",
+        "Started B.Tech at Aditya Institute of Technology and Management",
     },
     {
       year: "2024",
-      title: "Cloud Computing",
+      title: "Community Leadership",
       description:
-        "Learned AWS services, Linux, networking and cloud-native architectures.",
+        "Became GeeksForGeeks Campus Body Lead and began organizing technical initiatives.",
     },
     {
       year: "2025",
-      title: "Serverless Development",
+      title: "Product Thinking & Competitions",
       description:
-        "Built projects using Lambda, DynamoDB, API Gateway and EventBridge.",
+        "Secured Top 8 among 700+ teams at Coherence 7.0, IIM Kashipur, developing growth and retention strategies for a real-world business case.",
+    },
+    {
+      year: "2025",
+      title: "National Recognition",
+      description:
+        "Achieved Top 5 among 245+ teams at Xcelerate, IIIT Raipur, solving product and business challenges through structured analysis and prioritization.",
+    },
+    {
+      year: "2025",
+      title: "Outreach Coordinator",
+      description:
+        "Served as Outreach Coordinator for Avishkaar Season 3, collaborating with multiple teams to drive registrations, engagement, and event visibility.",
     },
     {
       year: "2026",
-      title: "Generative AI",
+      title: "Cloud & AI Builder",
       description:
-        "Exploring LLMs, Prompt Engineering, RAG systems and AI-powered products.",
+        "Designed and deployed cloud-native applications using AWS, including a Portfolio Management System, Serverless Job Portal, and automation workflows.",
     },
     {
-      year: "Future",
-      title: "Product Leadership",
+      year: "2026",
+      title: "Current Focus",
       description:
-        "Building impactful AI products at the intersection of technology and business.",
+        "Exploring Product Management, Generative AI, RAG architectures, and scalable serverless systems while building user-centric digital products.",
     },
   ];
 
