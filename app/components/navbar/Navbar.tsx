@@ -8,7 +8,6 @@ export default function Navbar() {
 
         <div className="hidden md:flex gap-8 text-sm text-gray-300">
           <a href="#projects">Projects</a>
-          <a href="#case-studies">Case Studies</a>
           <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
         </div>

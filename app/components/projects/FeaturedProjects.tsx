@@ -14,7 +14,7 @@ export default function FeaturedProjects() {
   }, []);
 
   return (
-    <section className="max-w-7xl mx-auto px-6 py-32">
+    <section id="projects" className="max-w-7xl mx-auto px-6 py-32">
       <div className="mb-16">
         <p className="text-blue-400 mb-2">Selected Work</p>
 
