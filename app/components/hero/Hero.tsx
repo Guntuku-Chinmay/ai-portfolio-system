@@ -26,26 +26,27 @@ export default function Hero() {
             animate={{ y: 0 }}
             className="text-5xl md:text-7xl font-extrabold leading-tight"
           >
-            Building
+            Hi, I'm Chinmay
             <span className="block bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-              Products at the Intersection of AI, Cloud & User Experience
+              Aspiring Product Manager & Gen-AI Builder
             </span>
           </motion.h1>
 
           <p className="text-gray-400 mt-6 text-lg">
-            Exploring Product Management, Generative AI, and Cloud Engineering
-            through real-world projects.
+            B.Tech student passionate about Product Strategy, Generative AI, and
+            Cloud-Native Applications. Building user-centric products that solve
+            real-world problems.
           </p>
 
           <TypeAnimation
             sequence={[
-              "Building AI Products",
+              "370+ Students Impacted",
               2000,
-              "Learning Product Management",
+              "Top 8 / 700+ Teams - IIM Kashipur",
               2000,
-              "Deploying on AWS",
+              "Top 5 / 245+ Teams - IIIT Raipur",
               2000,
-              "Exploring Multi-Agent AI",
+              "3+ Production AWS Projects",
               2000,
             ]}
             wrapper="div"
@@ -59,7 +60,11 @@ export default function Hero() {
               View Projects
             </button>
 
-            <button className="px-6 py-3 rounded-xl border border-white/20 text-white">
+            <a
+  href="/resume.pdf"
+  download
+  className="px-6 py-3 rounded-xl border border-white/20 hover:bg-white/10 transition"
+>
               Download Resume
             </button>
           </div>
